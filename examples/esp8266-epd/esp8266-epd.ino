@@ -122,21 +122,21 @@ void draw_text_demo(void)
   epd_set_ch_font(GBK32);
   epd_set_en_font(ASCII32);
   epd_disp_string(buff, 0, 50);
-  epd_disp_string("ASCII32: Hello, Sabas & Monica", 0, 300);
+  epd_disp_string("ASCII32: Hello, World!", 0, 300);
 
   epd_set_ch_font(GBK48);
   epd_set_en_font(ASCII48);
   buff[3] = '4';
   buff[4] = '8';
   epd_disp_string(buff, 0, 100);
-  epd_disp_string("ASCII48: Hello, Sabas & Monica!", 0, 350);
+  epd_disp_string("ASCII48: Hello, World!", 0, 350);
 
   epd_set_ch_font(GBK64);
   epd_set_en_font(ASCII64);
   buff[3] = '6';
   buff[4] = '4';
   epd_disp_string(buff, 0, 160);
-  epd_disp_string("ASCII64: Hello, Sabas & Monica", 0, 450);
+  epd_disp_string("ASCII64: Hello, World!", 0, 450);
 
 
   epd_udpate();
