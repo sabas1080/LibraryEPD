@@ -15,6 +15,9 @@
 #include <ESP8266WiFi.h>
 #include <epd.h>
 
+const int wake_up = 5;
+const int reset = 4;
+
 /*******************************************************************************
 * Function Name  : void base_draw(void)
 * Description    :
@@ -168,9 +171,6 @@ void setup(void)
   */
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, LOW);
-
-const int wake_up = 5; //2
-const int reset = 4; //3
 
   epd_init(wake_up,reset);
   epd_wakeup(wake_up);
